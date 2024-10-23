@@ -1,7 +1,6 @@
 // LIFFの初期化
-liff.init({ liffId: "2006463532-kZ6VNRyx" }) // ここにLIFF IDを挿入
+liff.init({ liffId: "2006463532-kZ6VNRyx" }) // 正しい記述
 .then(() => {
-    // ユーザーがログインしているか確認
     if (!liff.isLoggedIn()) {
         liff.login(); // ログインしていない場合はログインを促す
     } else {
@@ -9,8 +8,7 @@ liff.init({ liffId: "2006463532-kZ6VNRyx" }) // ここにLIFF IDを挿入
     }
 })
 .then(profile => {
-    // プロフィール情報を表示
-    document.getElementById("profile").innerHTML = `
+    document.getElementById('profile').innerHTML = `
         <p>名前: ${profile.displayName}</p>
         <img src="${profile.pictureUrl}" alt="プロフィール画像" width="100">
         <p>ユーザーID: ${profile.userId}</p>
