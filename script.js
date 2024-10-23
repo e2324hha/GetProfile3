@@ -1,5 +1,5 @@
 // LIFFの初期化
-liff.init({ liffId: "2006463532-kZ6VNRyx" }) // 正しい記述
+liff.init({ liffId:"2006463532-kZ6VNRyx" }) // 正しい記述
 .then(() => {
     if (!liff.isLoggedIn()) {
         liff.login(); // ログインしていない場合はログインを促す
