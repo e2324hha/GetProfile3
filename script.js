@@ -12,7 +12,6 @@ liff.init({ liffId:"2006463532-kZ6VNRyx" }) // 正しい記述
         <p>名前: ${profile.displayName}</p>
         <img src="${profile.pictureUrl}" alt="プロフィール画像" width="100">
         <p>ユーザーID: ${profile.userId}</p>
-        <p>ステータスメッセージ：${profile.statusMessage}</p>
     `;
 })
 .catch(err => {
